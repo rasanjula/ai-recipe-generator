@@ -1,19 +1,18 @@
 {
-  "type": "module",
-  "devDependencies": {
-    "@types/node": "^20.19.14"
-  },
-  "name": "amplify",
+  "name": "generaterecipe",
   "version": "1.0.0",
   "main": "index.js",
-  "dependencies": {
-    "undici-types": "^7.11.0"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.888.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.4.0"
+  },
   "description": ""
 }

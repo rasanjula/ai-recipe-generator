@@ -1,11 +1,11 @@
+// amplify/backend.ts
 import { defineBackend } from '@aws-amplify/backend';
-import { auth } from './auth/resource';
+import { auth } from './auth/resource';          // already in your tree
 import { data } from './data/resource';
+import { askBedrock } from './functions/askBedrockGql/resource';
 
-/**
- * @see https://docs.amplify.aws/react/build-a-backend/ to add storage, functions, and more
- */
-defineBackend({
+export const backend = defineBackend({
   auth,
   data,
+  askBedrock,
 });
